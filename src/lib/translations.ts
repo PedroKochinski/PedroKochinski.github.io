@@ -7,6 +7,7 @@ type Dictionary = {
   services: { eyebrow: string; title: string; subtitle: string; items: { t: string; d: string; bullets: string[] }[] };
   proof: { eyebrow: string; title: string; subtitle: string; items: { k: string; v: string }[] };
   cases: { eyebrow: string; title: string; items: { tag: string; t: string; problem: string; solution: string; result: string }[] };
+  clients: { eyebrow: string; title: string; subtitle: string; items: { name: string; location: string; role: string; scope: string; tags: string[] }[] };
   tech: { eyebrow: string; title: string; subtitle: string; groups: { t: string; items: string[] }[] };
   process: { eyebrow: string; title: string; steps: { n: string; t: string; d: string }[] };
   packages: { eyebrow: string; title: string; items: { t: string; who: string; deliverables: string[]; featured?: boolean }[] };
