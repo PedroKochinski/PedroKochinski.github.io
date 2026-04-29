@@ -8,10 +8,7 @@ export function Clients() {
       <SectionHeader eyebrow={t.clients.eyebrow} title={t.clients.title} subtitle={t.clients.subtitle} />
       <div className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-4">
         {t.clients.items.map((c, i) => (
-          <article
-            key={i}
-            className={`bento-card p-7 flex flex-col ${i === 0 ? "lg:col-span-3 lg:row-span-1" : ""}`}
-          >
+          <article key={i} className="bento-card p-7 flex flex-col">
             <div className="flex items-baseline justify-between gap-4 flex-wrap">
               <h3 className="font-display text-2xl md:text-3xl font-semibold tracking-tight">
                 {c.name}
