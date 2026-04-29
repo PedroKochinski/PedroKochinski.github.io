@@ -39,7 +39,7 @@ export const translations: Record<Lang, Dictionary> = {
       ctaPrimary: "Book a call",
       ctaSecondary: "See services",
       stats: [
-        { k: "40M+", v: "customers in recommendation base" },
+        { k: "Large-scale", v: "experience with massive customer datasets in recommendation pipelines" },
         { k: "20K+", v: "concurrent users in production" },
         { k: "3K+", v: "users on RAG microservices" },
         { k: "BR · PT · EU · LATAM", v: "delivery footprint" },
@@ -91,7 +91,7 @@ export const translations: Record<Lang, Dictionary> = {
       title: "Real systems. Real scale.",
       subtitle: "A selection of measurable outcomes from delivered work.",
       items: [
-        { k: "40M+", v: "customers indexed in vector recommendation pipeline" },
+        { k: "Large-scale", v: "hands-on experience with massive customer datasets in vector recommendation pipelines" },
         { k: "20K+", v: "concurrent users on a real-time recommendation system" },
         { k: "3K+", v: "users across LATAM and EU on RAG microservices" },
         { k: "4 regions", v: "Brazil · Portugal · LATAM · European Union" },
@@ -233,7 +233,7 @@ export const translations: Record<Lang, Dictionary> = {
       ctaPrimary: "Agendar conversa",
       ctaSecondary: "Ver serviços",
       stats: [
-        { k: "40M+", v: "clientes em base de recomendação" },
+        { k: "Larga escala", v: "experiência com grandes volumes de dados de clientes em pipelines de recomendação" },
         { k: "20K+", v: "usuários concorrentes em produção" },
         { k: "3K+", v: "usuários em microserviços RAG" },
         { k: "BR · PT · UE · LATAM", v: "atuação geográfica" },
@@ -285,7 +285,7 @@ export const translations: Record<Lang, Dictionary> = {
       title: "Sistemas reais. Escala real.",
       subtitle: "Uma seleção de resultados mensuráveis de projetos entregues.",
       items: [
-        { k: "40M+", v: "clientes indexados em pipeline de recomendação vetorial" },
+        { k: "Larga escala", v: "experiência hands-on com grandes volumes de dados de clientes em pipelines de recomendação vetorial" },
         { k: "20K+", v: "usuários concorrentes em recomendação em tempo real" },
         { k: "3K+", v: "usuários em microserviços RAG na LATAM e UE" },
         { k: "4 regiões", v: "Brasil · Portugal · LATAM · União Europeia" },
