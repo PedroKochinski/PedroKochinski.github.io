@@ -351,6 +351,6 @@ export const translations: Record<Lang, Dictionary> = {
       rights: "Todos os direitos reservados.",
     },
   },
-} as const;
+};
 
-export type Dict = typeof translations["en"];
+export type Dict = Dictionary;
