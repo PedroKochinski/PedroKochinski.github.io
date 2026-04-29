@@ -124,9 +124,34 @@ export const translations: Record<Lang, Dictionary> = {
         },
       ],
     },
-    tech: {
-      eyebrow: "Stack",
-      title: "Tools, picked per problem.",
+    clients: {
+      eyebrow: "Selected experience",
+      title: "Where the work has shipped.",
+      subtitle: "A snapshot of organizations and engagements behind the systems above.",
+      items: [
+        {
+          name: "SPMS",
+          location: "Portugal · Public Health IT",
+          role: "AI & Backend Engineering",
+          scope: "Largest engagement to date. Backend APIs, integrations with GitHub, GitLab and Atlassian, video and document processing, chunking and indexing into vector databases, S3 storage, internal chatbots, deploy via ArgoCD and GitLab CI.",
+          tags: ["APIs", "RAG", "Vector DBs", "Video & Docs", "S3", "ArgoCD", "GitLab CI", "Chatbots"],
+        },
+        {
+          name: "Sebrae PR",
+          location: "Brazil · Business Support",
+          role: "AI & Data Engineering",
+          scope: "Recommendation algorithms, ETL pipelines, RAG systems and AI-powered application development to support business intelligence and end-user products.",
+          tags: ["Recommendation", "ETL", "RAG", "AI Apps"],
+        },
+        {
+          name: "Wise Systems",
+          location: "Brazil · Software Studio",
+          role: "AI & Backend Engineering",
+          scope: "Chatbots, REST APIs and SaaS development — from architecture to delivery of production-grade product features.",
+          tags: ["Chatbots", "APIs", "SaaS"],
+        },
+      ],
+    },
       subtitle: "Python is the main backbone — never the constraint.",
       groups: [
         { t: "Backend", items: ["Python", "FastAPI", "REST APIs", "Microservices", "Node.js"] },
@@ -290,9 +315,34 @@ export const translations: Record<Lang, Dictionary> = {
         },
       ],
     },
-    tech: {
-      eyebrow: "Stack",
-      title: "Ferramentas, escolhidas por problema.",
+    clients: {
+      eyebrow: "Experiência selecionada",
+      title: "Onde o trabalho foi entregue.",
+      subtitle: "Uma amostra das organizações e engajamentos por trás dos sistemas acima.",
+      items: [
+        {
+          name: "SPMS",
+          location: "Portugal · TI da Saúde Pública",
+          role: "Engenharia de IA e Backend",
+          scope: "Maior projeto em que participei. APIs backend, integrações com GitHub, GitLab e Atlassian, processamento de vídeo e documentos, chunking e indexação em bancos vetoriais, storage S3, chatbots internos, deploy com ArgoCD e GitLab CI.",
+          tags: ["APIs", "RAG", "Vector DBs", "Vídeo e Docs", "S3", "ArgoCD", "GitLab CI", "Chatbots"],
+        },
+        {
+          name: "Sebrae PR",
+          location: "Brasil · Apoio empresarial",
+          role: "Engenharia de IA e Dados",
+          scope: "Algoritmos de recomendação, pipelines ETL, sistemas RAG e desenvolvimento de aplicações com IA para apoiar inteligência de negócio e produtos para usuários finais.",
+          tags: ["Recomendação", "ETL", "RAG", "Apps com IA"],
+        },
+        {
+          name: "Wise Systems",
+          location: "Brasil · Software Studio",
+          role: "Engenharia de IA e Backend",
+          scope: "Chatbots, APIs REST e desenvolvimento de SaaS — da arquitetura à entrega de funcionalidades de produto em produção.",
+          tags: ["Chatbots", "APIs", "SaaS"],
+        },
+      ],
+    },
       subtitle: "Python é a espinha principal — nunca a limitação.",
       groups: [
         { t: "Backend", items: ["Python", "FastAPI", "APIs REST", "Microserviços", "Node.js"] },
