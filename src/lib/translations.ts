@@ -201,7 +201,7 @@ export const translations: Record<Lang, Dictionary> = {
     },
     cases: {
       eyebrow: "Case studies",
-      title: "Anonymized work.",
+      title: "Previous solutions.",
       items: [
         {
           tag: "Recommendation",
@@ -242,7 +242,7 @@ export const translations: Record<Lang, Dictionary> = {
           location: "Portugal · Public Health IT",
           role: "AI & Backend Engineering",
           scope:
-            "Largest engagement to date. Backend APIs, integrations with GitHub, GitLab and Atlassian, video and document processing, chunking and indexing into vector databases, S3 storage, internal chatbots, deploy via ArgoCD and GitLab CI.",
+            "Enterprise health IT engagement involving backend APIs, integrations with GitHub, GitLab and Atlassian, video and document processing, chunking and indexing into vector databases, S3 storage, internal chatbots, and deployment via ArgoCD and GitLab CI.",
           tags: [
             "APIs",
             "RAG",
@@ -520,7 +520,7 @@ export const translations: Record<Lang, Dictionary> = {
     },
     cases: {
       eyebrow: "Mini cases",
-      title: "Trabalhos anonimizados.",
+      title: "Soluções anteriores.",
       items: [
         {
           tag: "Recomendação",
@@ -561,7 +561,7 @@ export const translations: Record<Lang, Dictionary> = {
           location: "Portugal · TI da Saúde Pública",
           role: "Engenharia de IA e Backend",
           scope:
-            "Maior projeto em que participei. APIs backend, integrações com GitHub, GitLab e Atlassian, processamento de vídeo e documentos, chunking e indexação em bancos vetoriais, storage S3, chatbots internos, deploy com ArgoCD e GitLab CI.",
+            "Engajamento em TI para saúde pública envolvendo APIs backend, integrações com GitHub, GitLab e Atlassian, processamento de vídeo e documentos, chunking e indexação em bancos vetoriais, storage S3, chatbots internos e deploy com ArgoCD e GitLab CI.",
           tags: [
             "APIs",
             "RAG",

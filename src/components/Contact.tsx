@@ -42,7 +42,7 @@ export function Contact() {
               rel="noreferrer"
               className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-glow hover:opacity-90"
             >
-              {t.contact.ctaCall} →
+              {t.contact.ctaCall}
             </a>
             <a
               href={`mailto:${EMAIL}`}
@@ -82,7 +82,7 @@ export function Contact() {
             type="submit"
             className="w-full inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-glow hover:opacity-90"
           >
-            {t.contact.form.submit} →
+            {t.contact.form.submit}
           </button>
           {sent && (
             <p className="text-xs text-muted-foreground text-center">{t.contact.form.sent}</p>
