@@ -7,6 +7,7 @@ type Dictionary = {
   services: { eyebrow: string; title: string; subtitle: string; items: { t: string; d: string; bullets: string[] }[] };
   proof: { eyebrow: string; title: string; subtitle: string; items: { k: string; v: string }[] };
   cases: { eyebrow: string; title: string; items: { tag: string; t: string; problem: string; solution: string; result: string }[] };
+  clients: { eyebrow: string; title: string; subtitle: string; items: { name: string; location: string; role: string; scope: string; tags: string[] }[] };
   tech: { eyebrow: string; title: string; subtitle: string; groups: { t: string; items: string[] }[] };
   process: { eyebrow: string; title: string; steps: { n: string; t: string; d: string }[] };
   packages: { eyebrow: string; title: string; items: { t: string; who: string; deliverables: string[]; featured?: boolean }[] };
@@ -120,6 +121,34 @@ export const translations: Record<Lang, Dictionary> = {
           problem: "Support team needed faster access to logs, internal bases and operational knowledge.",
           solution: "Agentic workflows with RAG, PostgreSQL and Cassandra integration, Docker, LangChain, LangGraph and OpenAI.",
           result: "Conversational interface increasing operational productivity.",
+        },
+      ],
+    },
+    clients: {
+      eyebrow: "Selected experience",
+      title: "Where the work has shipped.",
+      subtitle: "A snapshot of organizations and engagements behind the systems above.",
+      items: [
+        {
+          name: "SPMS",
+          location: "Portugal · Public Health IT",
+          role: "AI & Backend Engineering",
+          scope: "Largest engagement to date. Backend APIs, integrations with GitHub, GitLab and Atlassian, video and document processing, chunking and indexing into vector databases, S3 storage, internal chatbots, deploy via ArgoCD and GitLab CI.",
+          tags: ["APIs", "RAG", "Vector DBs", "Video & Docs", "S3", "ArgoCD", "GitLab CI", "Chatbots"],
+        },
+        {
+          name: "Sebrae PR",
+          location: "Brazil · Business Support",
+          role: "AI & Data Engineering",
+          scope: "Recommendation algorithms, ETL pipelines, RAG systems and AI-powered application development to support business intelligence and end-user products.",
+          tags: ["Recommendation", "ETL", "RAG", "AI Apps"],
+        },
+        {
+          name: "Wise Systems",
+          location: "Brazil · Software Studio",
+          role: "AI & Backend Engineering",
+          scope: "Chatbots, REST APIs and SaaS development — from architecture to delivery of production-grade product features.",
+          tags: ["Chatbots", "APIs", "SaaS"],
         },
       ],
     },
@@ -286,6 +315,34 @@ export const translations: Record<Lang, Dictionary> = {
           problem: "Time de suporte precisava acessar logs, bases internas e conhecimento operacional com mais velocidade.",
           solution: "Workflows agentic com RAG, integração PostgreSQL e Cassandra, Docker, LangChain, LangGraph e OpenAI.",
           result: "Interface conversacional aumentando a produtividade operacional.",
+        },
+      ],
+    },
+    clients: {
+      eyebrow: "Experiência selecionada",
+      title: "Onde o trabalho foi entregue.",
+      subtitle: "Uma amostra das organizações e engajamentos por trás dos sistemas acima.",
+      items: [
+        {
+          name: "SPMS",
+          location: "Portugal · TI da Saúde Pública",
+          role: "Engenharia de IA e Backend",
+          scope: "Maior projeto em que participei. APIs backend, integrações com GitHub, GitLab e Atlassian, processamento de vídeo e documentos, chunking e indexação em bancos vetoriais, storage S3, chatbots internos, deploy com ArgoCD e GitLab CI.",
+          tags: ["APIs", "RAG", "Vector DBs", "Vídeo e Docs", "S3", "ArgoCD", "GitLab CI", "Chatbots"],
+        },
+        {
+          name: "Sebrae PR",
+          location: "Brasil · Apoio empresarial",
+          role: "Engenharia de IA e Dados",
+          scope: "Algoritmos de recomendação, pipelines ETL, sistemas RAG e desenvolvimento de aplicações com IA para apoiar inteligência de negócio e produtos para usuários finais.",
+          tags: ["Recomendação", "ETL", "RAG", "Apps com IA"],
+        },
+        {
+          name: "Wise Systems",
+          location: "Brasil · Software Studio",
+          role: "Engenharia de IA e Backend",
+          scope: "Chatbots, APIs REST e desenvolvimento de SaaS — da arquitetura à entrega de funcionalidades de produto em produção.",
+          tags: ["Chatbots", "APIs", "SaaS"],
         },
       ],
     },
