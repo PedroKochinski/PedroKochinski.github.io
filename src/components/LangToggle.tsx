@@ -11,7 +11,9 @@ export function LangToggle() {
           key={l}
           onClick={() => setLang(l)}
           className={`px-3 py-1 text-xs font-mono uppercase tracking-wider rounded-full transition-colors ${
-            lang === l ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+            lang === l
+              ? "bg-primary text-primary-foreground"
+              : "text-muted-foreground hover:text-foreground"
           }`}
           aria-pressed={lang === l}
         >

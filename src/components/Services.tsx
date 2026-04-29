@@ -5,7 +5,11 @@ export function Services() {
   const { t } = useI18n();
   return (
     <Section id="services">
-      <SectionHeader eyebrow={t.services.eyebrow} title={t.services.title} subtitle={t.services.subtitle} />
+      <SectionHeader
+        eyebrow={t.services.eyebrow}
+        title={t.services.title}
+        subtitle={t.services.subtitle}
+      />
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
         {t.services.items.map((s, i) => (
           <div key={i} className="bento-card p-8">

@@ -12,7 +12,10 @@ export function Tech() {
             <div className="font-mono text-xs uppercase tracking-wider text-primary">{g.t}</div>
             <div className="mt-4 flex flex-wrap gap-2">
               {g.items.map((it) => (
-                <span key={it} className="rounded-full border border-border bg-background/40 px-3 py-1 text-xs font-mono text-foreground/90">
+                <span
+                  key={it}
+                  className="rounded-full border border-border bg-background/40 px-3 py-1 text-xs font-mono text-foreground/90"
+                >
                   {it}
                 </span>
               ))}

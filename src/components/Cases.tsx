@@ -28,8 +28,12 @@ export function Cases() {
 function Block({ label, text, accent }: { label: string; text: string; accent?: boolean }) {
   return (
     <div>
-      <div className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">{label}</div>
-      <p className={`mt-1 leading-relaxed ${accent ? "text-foreground" : "text-foreground/80"}`}>{text}</p>
+      <div className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
+        {label}
+      </div>
+      <p className={`mt-1 leading-relaxed ${accent ? "text-foreground" : "text-foreground/80"}`}>
+        {text}
+      </p>
     </div>
   );
 }

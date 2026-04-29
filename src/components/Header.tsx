@@ -13,8 +13,13 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/70 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#top" className="flex items-center gap-2 font-display text-base font-semibold tracking-tight">
-          <span className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-primary to-glow text-primary-foreground font-mono text-xs font-bold">PK</span>
+        <a
+          href="#top"
+          className="flex items-center gap-2 font-display text-base font-semibold tracking-tight"
+        >
+          <span className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-primary to-glow text-primary-foreground font-mono text-xs font-bold">
+            PK
+          </span>
           Kochinski
         </a>
         <nav className="hidden md:flex items-center gap-7 text-sm text-muted-foreground">
