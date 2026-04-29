@@ -152,6 +152,9 @@ export const translations: Record<Lang, Dictionary> = {
         },
       ],
     },
+    tech: {
+      eyebrow: "Stack",
+      title: "Tools, picked per problem.",
       subtitle: "Python is the main backbone — never the constraint.",
       groups: [
         { t: "Backend", items: ["Python", "FastAPI", "REST APIs", "Microservices", "Node.js"] },
