@@ -159,8 +159,8 @@ export const translations: Record<Lang, Dictionary> = {
       groups: [
         { t: "Backend", items: ["Python", "FastAPI", "REST APIs", "Microservices", "Node.js"] },
         { t: "AI & LLMs", items: ["RAG", "Embeddings", "LangChain", "LangGraph", "OpenAI", "Agents"] },
-        { t: "Data & Search", items: ["Vector DBs", "PostgreSQL", "MongoDB", "Cassandra", "Hybrid Search", "RRF"] },
-        { t: "Infra & Deploy", items: ["Docker", "Servers", "RabbitMQ", "Queues", "ETL Pipelines"] },
+        { t: "Data & Search", items: ["Vector DBs", "PostgreSQL", "MongoDB", "Cassandra", "Hybrid Search", "RRF", "ETL Pipelines"] },
+        { t: "Infra & Deploy", items: ["Docker", "Servers", "RabbitMQ", "Queues"] },
         { t: "Frontend & Product", items: ["React", "JavaScript", "Dashboards", "Data Viz"] },
       ],
     },
@@ -353,8 +353,8 @@ export const translations: Record<Lang, Dictionary> = {
       groups: [
         { t: "Backend", items: ["Python", "FastAPI", "APIs REST", "Microserviços", "Node.js"] },
         { t: "IA e LLMs", items: ["RAG", "Embeddings", "LangChain", "LangGraph", "OpenAI", "Agentes"] },
-        { t: "Dados e Busca", items: ["Vector DBs", "PostgreSQL", "MongoDB", "Cassandra", "Hybrid Search", "RRF"] },
-        { t: "Infra e Deploy", items: ["Docker", "Servidores", "RabbitMQ", "Filas", "Pipelines ETL"] },
+        { t: "Dados e Busca", items: ["Vector DBs", "PostgreSQL", "MongoDB", "Cassandra", "Hybrid Search", "RRF", "Pipelines ETL"] },
+        { t: "Infra e Deploy", items: ["Docker", "Servidores", "RabbitMQ", "Filas"] },
         { t: "Frontend e Produto", items: ["React", "JavaScript", "Dashboards", "Data Viz"] },
       ],
     },
