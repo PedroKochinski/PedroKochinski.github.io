@@ -1,6 +1,24 @@
 export type Lang = "en" | "pt";
 
-export const translations = {
+type Dictionary = {
+  nav: { services: string; work: string; process: string; packages: string; about: string; contact: string; cta: string };
+  hero: { tag: string; title: string; titleAccent: string; subtitle: string; ctaPrimary: string; ctaSecondary: string; stats: { k: string; v: string }[] };
+  problems: { eyebrow: string; title: string; items: { t: string; d: string }[] };
+  services: { eyebrow: string; title: string; subtitle: string; items: { t: string; d: string; bullets: string[] }[] };
+  proof: { eyebrow: string; title: string; subtitle: string; items: { k: string; v: string }[] };
+  cases: { eyebrow: string; title: string; items: { tag: string; t: string; problem: string; solution: string; result: string }[] };
+  tech: { eyebrow: string; title: string; subtitle: string; groups: { t: string; items: string[] }[] };
+  process: { eyebrow: string; title: string; steps: { n: string; t: string; d: string }[] };
+  packages: { eyebrow: string; title: string; items: { t: string; who: string; deliverables: string[]; featured?: boolean }[] };
+  about: { eyebrow: string; title: string; role: string; body: string; langs: string };
+  contact: {
+    eyebrow: string; title: string; ctaCall: string; ctaEmail: string;
+    form: { name: string; company: string; email: string; type: string; typeOptions: string[]; desc: string; deadline: string; submit: string; sent: string };
+  };
+  footer: { tagline: string; rights: string };
+};
+
+export const translations: Record<Lang, Dictionary> = {
   en: {
     nav: {
       services: "Services",
