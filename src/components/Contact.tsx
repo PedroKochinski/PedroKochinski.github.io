@@ -2,25 +2,53 @@ import { useState, type FormEvent } from "react";
 import { useI18n } from "@/lib/i18n";
 import { Section } from "./Section";
 
-const EMAIL = "contato@kochinski.dev";
+const EMAIL = "pedrokochinski@gmail.com";
+const FORM_ENDPOINT = `https://formsubmit.co/ajax/${EMAIL}`;
 const CAL = "https://cal.com/pedrokochinski";
+type SubmitStatus = "idle" | "sending" | "sent" | "error";
 
 export function Contact() {
   const { t } = useI18n();
-  const [sent, setSent] = useState(false);
+  const [status, setStatus] = useState<SubmitStatus>("idle");
 
-  function onSubmit(e: FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const fd = new FormData(e.currentTarget);
-    const body =
-      `Name: ${fd.get("name")}\n` +
-      `Company: ${fd.get("company")}\n` +
-      `Email: ${fd.get("email")}\n` +
-      `Project type: ${fd.get("type")}\n` +
-      `Deadline: ${fd.get("deadline")}\n\n` +
-      `${fd.get("desc")}`;
-    window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent("New project brief")}&body=${encodeURIComponent(body)}`;
-    setSent(true);
+    const form = e.currentTarget;
+    const fd = new FormData(form);
+    const payload = {
+      name: String(fd.get("name") ?? ""),
+      company: String(fd.get("company") || "Not provided"),
+      email: String(fd.get("email") ?? ""),
+      project_type: String(fd.get("type") ?? ""),
+      deadline: String(fd.get("deadline") || "Not provided"),
+      message: String(fd.get("desc") ?? ""),
+      _honey: String(fd.get("_honey") ?? ""),
+      _subject: "New project brief from pedrokochinski.github.io",
+      _template: "table",
+      _captcha: "false",
+    };
+
+    setStatus("sending");
+
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Form submission failed with status ${response.status}`);
+      }
+
+      form.reset();
+      setStatus("sent");
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -54,6 +82,14 @@ export function Contact() {
         </div>
 
         <form onSubmit={onSubmit} className="bento-card p-8 md:p-10 space-y-4">
+          <input
+            type="text"
+            name="_honey"
+            tabIndex={-1}
+            autoComplete="off"
+            className="hidden"
+            aria-hidden="true"
+          />
           <div className="grid sm:grid-cols-2 gap-4">
             <Field label={t.contact.form.name} name="name" required />
             <Field label={t.contact.form.company} name="company" />
@@ -80,12 +116,16 @@ export function Contact() {
           </div>
           <button
             type="submit"
+            disabled={status === "sending"}
             className="w-full inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-medium text-primary-foreground shadow-glow hover:opacity-90"
           >
-            {t.contact.form.submit}
+            {status === "sending" ? t.contact.form.sending : t.contact.form.submit}
           </button>
-          {sent && (
+          {status === "sent" && (
             <p className="text-xs text-muted-foreground text-center">{t.contact.form.sent}</p>
+          )}
+          {status === "error" && (
+            <p className="text-xs text-destructive text-center">{t.contact.form.error}</p>
           )}
         </form>
       </div>

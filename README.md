@@ -36,3 +36,9 @@ The workflow in `.github/workflows/pages.yml` deploys the Vite build to GitHub P
 4. Push to `main` or run the workflow manually.
 
 The Vite config automatically sets the correct `base` path during GitHub Actions. For a project page, it uses `/<repository-name>/`. For a user page like `pedrokochinski.github.io`, it uses `/`.
+
+## Contact form
+
+The contact form submits through FormSubmit AJAX to `pedrokochinski@gmail.com`.
+
+On the first real submission, FormSubmit may send an activation email to that inbox. Confirm it once so future submissions are delivered automatically.

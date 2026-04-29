@@ -65,7 +65,9 @@ type Dictionary = {
       desc: string;
       deadline: string;
       submit: string;
+      sending: string;
       sent: string;
+      error: string;
     };
   };
   footer: { tagline: string; rights: string };
@@ -383,7 +385,9 @@ export const translations: Record<Lang, Dictionary> = {
         desc: "Problem description",
         deadline: "Desired deadline",
         submit: "Send brief",
-        sent: "Brief drafted in your email client.",
+        sending: "Sending brief...",
+        sent: "Brief sent. I will reply by email.",
+        error: "Something went wrong. Please try again or send an email directly.",
       },
     },
     footer: {
@@ -706,7 +710,9 @@ export const translations: Record<Lang, Dictionary> = {
         desc: "Descrição do problema",
         deadline: "Prazo desejado",
         submit: "Enviar briefing",
-        sent: "Briefing aberto no seu cliente de e-mail.",
+        sending: "Enviando briefing...",
+        sent: "Briefing enviado. Vou responder por e-mail.",
+        error: "Algo deu errado. Tente novamente ou envie um e-mail diretamente.",
       },
     },
     footer: {
