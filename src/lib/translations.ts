@@ -346,6 +346,9 @@ export const translations: Record<Lang, Dictionary> = {
         },
       ],
     },
+    tech: {
+      eyebrow: "Stack",
+      title: "Ferramentas, escolhidas por problema.",
       subtitle: "Python é a espinha principal — nunca a limitação.",
       groups: [
         { t: "Backend", items: ["Python", "FastAPI", "APIs REST", "Microserviços", "Node.js"] },
